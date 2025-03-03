@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://bishal-sarkar-admin.github.io/Music-Lover/", // Allow frontend to connect from any origin
+    origin: "https://bishal-sarkar-admin.github.io/*", // Allow frontend to connect from any origin
     methods: ["GET", "POST"],
   },
 });
